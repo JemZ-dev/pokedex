@@ -4,8 +4,6 @@ A modern, interactive Pokédex web application built with React + TypeScript. Br
 
 🌐 **[Live Demo](https://jemz-dev.github.io/pokedex/)**
 
-![PokeDex Screenshot](https://raw.githubusercontent.com/JemZ-dev/pokedex/main/preview.png)
-
 ---
 
 ## ✨ Features
@@ -61,21 +59,6 @@ npm run build
 
 # Deploy to GitHub Pages
 npm run deploy
-```
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── Navbar.tsx          # Navigation bar
-│   ├── Hero.tsx            # Landing hero section
-│   ├── PokemonGrid.tsx     # Pokémon browsing grid with search & filters
-│   ├── PokemonDetails.tsx  # Detailed Pokémon page
-│   └── Footer.tsx          # Footer
-├── App.tsx                 # Routes & layout
-├── index.css               # Global styles & design system
-└── main.tsx                # Entry point
 ```
 
 ## 🎮 Usage
