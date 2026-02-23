@@ -830,11 +830,11 @@ button {
     justify-content: center !important;
   }
 
-  .detail-info-col > span:first-child {
+  .detail-info-col>span:first-child {
     text-align: center;
   }
 
-  .detail-info-col > p {
+  .detail-info-col>p {
     text-align: center;
   }
 
@@ -879,9 +879,9 @@ button {
   }
 }
 
-/* Touch devices: hide hover hint */
+/* Touch devices: show tap hint instead */
 @media (hover: none) {
   .hover-hint-text {
-    display: none !important;
+    opacity: 0.6 !important;
   }
 }

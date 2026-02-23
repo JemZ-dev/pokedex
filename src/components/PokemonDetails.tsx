@@ -200,6 +200,7 @@ const PokemonDetails: React.FC = () => {
                         style={{
                             flex: '0 0 auto', width: 'clamp(260px, 28vw, 380px)', aspectRatio: '1',
                             position: 'relative', cursor: 'pointer',
+                            paddingBottom: '28px',
                         }}
                         onClick={handleImageInteraction}
                         onMouseEnter={() => {
@@ -215,7 +216,7 @@ const PokemonDetails: React.FC = () => {
                             src={pokemon.sprites.other['official-artwork'].front_default || pokemon.sprites.front_default}
                             alt={pokemon.name}
                             style={{
-                                width: '100%', height: '100%', objectFit: 'contain',
+                                width: '100%', height: 'calc(100% - 28px)', objectFit: 'contain',
                                 filter: `drop-shadow(0 25px 40px ${color}40)`,
                                 transition: 'opacity 0.3s ease',
                                 position: 'absolute', top: 0, left: 0,
@@ -230,7 +231,7 @@ const PokemonDetails: React.FC = () => {
                                 style={{
                                     width: '60%', height: '60%', objectFit: 'contain',
                                     imageRendering: 'pixelated',
-                                    position: 'absolute', top: '50%', left: '50%',
+                                    position: 'absolute', top: 'calc(50% - 14px)', left: '50%',
                                     transform: 'translate(-50%, -50%)',
                                     opacity: showAnimated ? 1 : 0,
                                     visibility: showAnimated ? 'visible' : 'hidden',
@@ -240,9 +241,9 @@ const PokemonDetails: React.FC = () => {
                                 }}
                             />
                         )}
-                        {/* Hint text - hidden on touch devices via CSS */}
+                        {/* Hint text */}
                         <div className="hover-hint-text" style={{
-                            position: 'absolute', bottom: '-20px', left: '50%', transform: 'translateX(-50%)',
+                            position: 'absolute', bottom: '0px', left: '50%', transform: 'translateX(-50%)',
                             fontSize: '0.65rem', color: 'var(--text-muted)', opacity: 0.5,
                             pointerEvents: 'none', whiteSpace: 'nowrap',
                         }}>
